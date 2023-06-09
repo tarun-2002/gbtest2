@@ -1,0 +1,96 @@
+footer{
+    background-color: black;
+    opacity: 0.85;
+}
+
+.foot-border{
+       border-top: 2px solid #584d13;
+
+      }
+      
+      
+  
+  
+  
+
+
+.footerlogo{
+    height: 100px;
+    width: 100px;
+}
+.icon-size{
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    margin-left: 0px;
+}
+
+.footer-head{
+    background-image: linear-gradient(94.75deg,#d19a08,#fedb7e 27.6%,#eac460 50%,#d19a08 66.15%,#d19a08);
+    background-size: 100%;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    font-weight: 700;
+}
+
+.foot-content{
+    color: #C4B780;
+}
+
+.row{
+    margin: 10px;
+}
+.link-class{
+    text-decoration: none;
+}
+.link-class:hover{
+    color: #ffd700;
+}
+
+.gb-logo{
+    width: 200px;
+}
+.logo-div{
+    padding-top: 40px;
+    padding-left: 60px;
+    padding-bottom: 20px;
+}
+
+ .break:before {
+    position: absolute;
+    content: "";
+    top: -0.25em;
+    left: -0.25em;
+    background: linear-gradient(51deg, #FFB26B, #4F200D, #E5BC50, #A47E3B);
+    z-index: -1;
+    width: calc(100% + 0.5em);
+    height: 200px;
+   
+    animation: gradient 5s ease infinite;
+    background-size: 350% 350% !important;
+    box-shadow: 0 8px 5px #FFD93D;
+    transition: 0.5s ease-in-out;
+  }
+  
+.break:hover:before {
+    animation: gradient 5s ease infinite;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+      box-shadow: 0px 0px 8px #FFD93D;
+    }
+    50% {
+      background-position: 100% 50%;
+      box-shadow: 0 0px 3px #FFD93D;
+    }
+    100% {
+      background-position: 0% 50%;
+      box-shadow: 0px 0px 13px #FFD93D;
+    }
+  }
+
+  

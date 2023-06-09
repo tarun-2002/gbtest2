@@ -1,0 +1,354 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+  
+
+body {
+  background: #000 url(/public/images/bg-home.png) repeat 50%;
+  min-height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  overflow-x: hidden;
+  }
+:root{
+  --width: 60.5vw;
+  --speed: 5.250575433408974s; /* Replace var(--speed) with the desired animation speed value */
+  --stretch: 0px; /* Replace var(--stretch) with the desired stretch value */
+  --offsetX: 0px; /* Replace var(--offsetX) with the desired offsetX value */
+  --offsetY: 0px; /* Replace var(--offsetY) with the desired offsetY value */
+}
+  .StrangeShard_shard__j1TeS {
+    -webkit-animation: StrangeShard_shardMove__7AQUF 27s ease-out infinite var(--delay);
+    animation: StrangeShard_shardMove__7AQUF 27s ease-out infinite var(--delay);
+    background-color: var(--bgCol);
+    border-radius: 1px;
+    box-shadow: 0 0 2px 1px var(--bgCol);
+    height: 3px;
+    left: 50vw;
+    position: absolute;
+    top: 0;
+    width: 3px;
+    z-index: 1000;
+  }
+
+@keyframes StrangeShard_shardMove__7AQUF{
+  0% {
+    opacity: 1;
+    -webkit-transform: translate(var(--offXStart),var(--offYStart));
+    transform: translate(var(--offXStart),var(--offYStart));
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(var(--offXEnd),var(--offYEnd));
+    transform: translate(var(--offXEnd),var(--offYEnd));
+  }
+
+}
+
+.landing-page{
+  background: #000 url(/public/images/landing-bg.png);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.landing-page::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, black 100%);
+  filter: blur(10px);
+  pointer-events: none;
+}
+.throne::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, black 100%);
+  filter: blur(80px);
+  pointer-events: none;
+}
+
+
+
+/* Screen 1 */
+@media screen and (min-width: 1280px) and (max-width: 1920px) {
+  .landing-circle{
+    size: 100%;
+      width: 100%;
+      max-width: none; 
+      height: auto; 
+      pointer-events: none;
+    
+  }
+  .landing-circle-parent{
+    width: 50%;
+    size: 100%;
+  left: 50%;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  -webkit-transform: translateX(-50%) translateY(-2%);
+  transform: translateX(-50%) translateY(-2%);
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  width: 69%;
+  z-index: 3;
+  }
+  
+  .throne{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    left: 50%;
+    position: absolute;
+    top: 20%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    
+    z-index: 4;
+    width: 25%;
+  }
+  .throne-img{
+    width: 80%;
+  
+  }
+
+
+  .LanderRings_goldringsImg__0oFMX {
+    --width: 68.5vw;
+    -webkit-animation: LanderRings_rotateRings__hMOi5 var(--speed) infinite linear;
+    animation: LanderRings_rotateRings__hMOi5 var(--speed) infinite linear;
+    border-radius: 50%;
+    height: calc((1 - var(--stretch))*(var(--width) + 10px));
+    left: 50%;
+    position: absolute;
+    top: 0;
+    -webkit-transform: translate(calc(-50% + var(--offsetX)),calc(-53% + var(--offsetY)));
+    transform: translate(calc(-50% + var(--offsetX)),calc(-53% + var(--offsetY)));
+    -webkit-transform-origin: calc(50% - var(--offsetX)) calc(50% - var(--offsetY));
+    transform-origin: calc(50% - var(--offsetX)) calc(50% - var(--offsetY));
+    width: calc((1 + var(--stretch))*var(--width));
+    z-index: 3;
+    width: 50%;
+    size: 100%;
+  overflow: hidden;
+  width: 69%;
+  }
+
+  
+
+}
+/* Screen 1 End */
+
+
+
+/* For tablet displays from 601x962 through 1280x800 */
+@media screen and (min-width: 601px) and (max-width: 1280px) {
+  .landing-circle{
+    size: 100%;
+      width: 100%;
+      max-width: none; 
+      height: auto; 
+      pointer-events: none;
+    
+  }
+  .landing-circle-parent img{
+      pointer-events: none;
+      width: 800.5px;
+  left: 50%;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  -webkit-transform: translateX(-50%) translateY(-2%);
+  transform: translateX(-50%) translateY(-2%);
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  z-index: 3;
+  }
+
+
+
+  .throne img{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    left: 50%;
+    position: absolute;
+    top: 20%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 4;
+    width: 250px;
+  }
+  .LanderRings_goldringsImg__0oFMX {
+    --width: 68.5vw;
+    -webkit-animation: LanderRings_rotateRings__hMOi5 var(--speed) infinite linear;
+    animation: LanderRings_rotateRings__hMOi5 var(--speed) infinite linear;
+    border-radius: 50%;
+    height: calc((1 - var(--stretch))*(var(--width) + 10px));
+    left: 50%;
+    position: absolute;
+    top: 0;
+    -webkit-transform: translate(calc(-50% + var(--offsetX)),calc(-53% + var(--offsetY)));
+    transform: translate(calc(-50% + var(--offsetX)),calc(-53% + var(--offsetY)));
+    -webkit-transform-origin: calc(50% - var(--offsetX)) calc(50% - var(--offsetY));
+    transform-origin: calc(50% - var(--offsetX)) calc(50% - var(--offsetY));
+    width: calc((1 + var(--stretch))*var(--width));
+    z-index: 3;
+    width: 50%;
+    size: 100%;
+  overflow: hidden;
+  width: 69%;
+  }
+}
+
+
+
+/* For mobile displays from 360x640 through 414x896 */
+@media screen and (min-width: 360px) and (max-width: 601px) {
+  .landing-circle-parent img{
+    pointer-events: none;
+    
+left: 50%;
+overflow: hidden;
+position: relative;
+top: 0;
+-webkit-transform: translateX(-50%) translateY(-2%);
+transform: translateX(-50%) translateY(-2%);
+-webkit-transform-origin: 50% 0;
+transform-origin: 50% 0;
+
+z-index: 3;
+  
+}
+.throne img{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  left: 50%;
+  position: absolute;
+  top: 20%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  
+  z-index: 4;
+  width: 200px;
+}
+}
+
+
+
+
+
+
+.portalWindow {
+  width: 59vw;
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(-2%);
+  transform-origin: 50% 0;
+  z-index: 3;
+  overflow: hidden;
+  clip-path: ellipse(29vw 27.85vw at 50% -2%);
+}
+
+.portalWindowImg1 {
+  width: 100%;
+  object-fit: cover;
+}
+
+.portalWindowImg {
+  width: 59vw;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(-2%);
+  transform-origin: 50% 0;
+  z-index: 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+.title{
+  font-family: 'Sedgwick Ave Display', cursive;
+display: inline;
+position: relative;
+  font-size: 15vh;
+  text-align: center;
+  color: #6b0101;
+  font-weight: 900;
+  text-shadow: 0px 1.5px 0px rgb(0, 0, 0), 0px 14px 10px rgba(0, 0, 0, 0.15),
+    0px 17px 2px rgba(0, 0, 0, 0.1), 0px 5px 5px rgb(3, 3, 3);
+    z-index: 100;
+
+}
+.title-2{
+  font-family: 'Shadows Into Light', cursive;
+display: inline;
+position: relative;
+  font-size: 8.5vw;
+  text-align: center;
+  color: #6b0101;
+  font-weight: 400;
+  text-shadow: 0px 1.5px 0px rgb(0, 0, 0), 0px 14px 10px rgba(0, 0, 0, 0.15),
+    0px 17px 2px rgba(0, 0, 0, 0.1), 0px 5px 5px rgb(3, 3, 3);
+    z-index: 100;
+
+}
+.title-wrapper{
+  position: relative;
+  top: 22%;
+
+
+  
+text-align: center;
+
+
+
+  
+
+}
+
+.games{
+  padding-top: 0.3%;
+  padding-bottom: 3%;
+}
+.heading-wrapper{
+  font-family: 'Bebas Neue', sans-serif;
+  text-align: center;
+  padding-top: 7%;
+
+}
+.heading-wrapper h3{
+  font-size: 10vw;
+  color:#6b0101 ;
+  text-shadow: 0px 1.5px 0px rgb(0, 0, 0), 0px 14px 10px rgba(0, 0, 0, 0.15),
+  0px 17px 2px rgba(0, 0, 0, 0.1), 0px 5px 5px rgb(3, 3, 3);
+  z-index: 100;
+}
+

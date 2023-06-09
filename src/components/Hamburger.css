@@ -1,0 +1,146 @@
+
+  
+
+  .menu-label {
+    position: fixed;
+    top: 3rem;
+    right: 3rem;
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+    cursor: pointer;
+    z-index: 1000;
+    text-align: center;
+    background: none;
+    border: 2px solid #d19a08e5;
+    border-radius: 50%;
+    transition: all .9s ease;
+
+  }
+  
+  .icon {
+    position: relative;
+    background-color: #FFD700;
+    width: 2rem;
+    height: 3px;
+    display: inline-block;
+    margin-top: 50%;
+    transition: all 0.3s;
+    border-radius: 50px;
+  }
+  
+  .icon::before,
+  .icon::after {
+    content: "";
+    background-color: #FFD700;
+    width: 2rem;
+    height: 3px;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    transition: all 0.3s;
+    border-radius: 50px;
+  }
+  
+  .icon::before {
+    top: -0.8rem;
+    transform: rotate(0);
+  }
+  
+  .icon::after {
+    top: 0.8rem;
+    transform: rotate(0);
+  }
+  
+
+  
+  .icon.clicked {
+    background-color: transparent;
+  }
+  
+  .icon.clicked::before {
+    top: 0;
+    transform: rotate(135deg);
+  }
+  
+  .icon.clicked::after {
+    top: 0;
+    transform: rotate(-135deg);
+  }
+  
+  .nav-background.clicked {
+    transform: scale(80);
+  }
+  
+  .navigation {
+    height: 70vh;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    z-index: 600;
+    width: 0;
+    opacity: 0;
+    transition: width 0.8s, opacity 0.8s;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 50px !important;
+    padding: 0 10px !important;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 50px !important;
+  }
+
+  .navigation:before {
+    position: absolute;
+    content: "";
+    top: -0.25em;
+    left: -0.25em;
+    background: linear-gradient(51deg, #FFB26B, #4F200D, #3a2a01, #A47E3B);
+    width: calc(100% + 0.5em);
+    height: calc(100% + 0.5em);
+    border-radius: 50px !important;
+    animation: gradient 5s ease infinite;
+    background-size: 350% 350% !important;
+    box-shadow: 0 8px 5px #FFD93D;
+    transition: 0.5s ease-in-out;
+    opacity: 0.5;
+  }
+  
+  .navigation:hover:before {
+    animation: gradient 5s ease infinite;
+  }
+  
+  .navigation.clicked {
+    width: 80%;
+    opacity: 1;
+  }
+  
+  .list {
+    position: absolute;
+    list-style: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    
+  }
+  
+  .item-link {
+    display: inline-block;
+    font-size: 2rem;
+    text-decoration: none;  
+    transition: all 0.4s;
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px 20px !important;
+    color: wheat;
+    border-radius: 50px;
+  }
+  
+  .item-link:hover,
+  .item-link:active {
+  
+    color: black;
+    background: #FFD700;
+    transform: translateX(1rem);
+  }
+  
+
